@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>Job Quiz</title>
+  <link href="http://map.local.ch/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="http://map.local.ch/assets/global-datauri.css?1317312176" media="all" rel="stylesheet" type="text/css" />
+  <link href="jobs.css" media="all" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+
+var last="";
+var encmap;
+var link="abbarjvyythrffguvfyvax.ugzy";
+
+function encrypt_init()
+{
+  var map = new Array();
+  var s   = "abcdefghijklmnopqrstuvwxyz";
+  
+  for (i=0; i<s.length; i++)
+    map[s.charAt(i)]			= s.charAt((i+13)%26);
+  for (i=0; i<s.length; i++)
+    map[s.charAt(i).toUpperCase()]	= s.charAt((i+13)%26).toUpperCase();
+  return map;
+}
+
+function encrypt(a)
+{
+  if (!encmap)
+    encmap=encrypt_init();
+  s = "";
+  for (i=0; i<a.length; i++)
+    {
+      var b = a.charAt(i);
+
+      s	+= (b>='A' && b<='Z' || b>='a' && b<='z' ? encmap[b] : b);
+    }
+  return s;
+}
+
+    function iscorrect(a) {
+       if ((a.length == 10) && (encrypt(a) == 'bcrazvaqrq')) {
+           document.location = encrypt(link);
+           document.getElementById("hans").innerHTML = 'Richtig! <a href="' + encrypt(link) + '">Weiter zu den Jobdetails und Kontaktaufnahme</a>'
+       }
+       if (a.length < 10) {
+           document.getElementById("hans").innerHTML = 'L&ouml;sungswort zu kurz (braucht 10 Buchstaben)';
+       }
+        
+    }
+
+  </script>
+</head>
+<body onload="document.getElementById('solution').focus(); document.getElementById('solution').value='';">
+<div id="cnt">
+<h1>Eingabe des L&ouml;sungsworts</h1>
+<form>
+  <input type="text" name="solution" id="solution" onkeyup="iscorrect(this.value)"/><br />
+  <label id="hans" for="solution">L&ouml;sungswort zu kurz (braucht 10 Buchstaben)</label>
+</form>
+</div>
+</body>
