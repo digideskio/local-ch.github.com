@@ -56,3 +56,7 @@ body {
 #cnt input {
     border: 2px inset;
 }
+
+#share {
+  margin:0 auto;width:740px;
+}
