@@ -37,6 +37,7 @@ function encrypt(a)
 }
 
     function iscorrect(a) {
+       a = a.toLowerCase()
        if ((a.length == 10) && (encrypt(a) == 'bcrazvaqrq')) {
            document.location = encrypt(link);
            document.getElementById("hans").innerHTML = 'Richtig! <a href="' + encrypt(link) + '">Weiter zu den Jobdetails und Kontaktaufnahme</a>'
