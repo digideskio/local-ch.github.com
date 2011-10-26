@@ -40,9 +40,12 @@ function encrypt(a)
        a = a.toLowerCase()
        if ((a.length == 10) && (encrypt(a) == 'bcrazvaqrq')) {
            document.location = encrypt(link);
-           document.getElementById("hans").innerHTML = 'Richtig! <a href="' + encrypt(link) + '">Weiter zu den Jobdetails und Kontaktaufnahme</a>'
-       }
-       if (a.length < 10) {
+           document.getElementById("hans").innerHTML = 'Richtig! <a href="' + encrypt(link) + '">Weiter zu den Jobdetails und Kontaktaufnahme</a>';
+       } else if (a.length == 10) {
+           document.getElementById("hans").innerHTML = 'leider falsch';
+       } else if (a.length > 10) {
+           document.getElementById("hans").innerHTML = 'L&ouml;sungswort zu lang (braucht 10 Buchstaben)';
+       } else if (a.length < 10) {
            document.getElementById("hans").innerHTML = 'L&ouml;sungswort zu kurz (braucht 10 Buchstaben)';
        }
         
