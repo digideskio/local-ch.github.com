@@ -76,9 +76,19 @@ function encrypt(a)
 </div>
 
 <div id="share">
-<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fbit.ly%2Flequiz&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=145142466544" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:21px;" allowTransparency="true"></iframe>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1&appId=145942268896";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<span id="fblike"><fb:like href="http://bit.ly/lequiz" send="true" layout="button_count" width="450" show_faces="false"></fb:like></span>
+
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/lequiz" data-text="Ich bin ein &quot;local hero&quot;, Du auch? Hier kannst Du's ausprobieren." data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<div class="g-plusone" data-href="http://bit.ly/lequiz"></div>
+<div class="g-plusone" data-size="small" data-href="http://bit.ly/lequiz"></div>
 <!-- Place this render call where appropriate -->
 <script type="text/javascript">
   window.___gcfg = {lang: 'de'};
@@ -91,4 +101,5 @@ function encrypt(a)
 </script>
 </div>
 
+</div>
 </body>
