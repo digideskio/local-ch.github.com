@@ -62,7 +62,8 @@ body {
 }
 
 #fblike iframe {
-    width: 95px !important;
+    width: 200px !important;
+    display: inline;
 }
 
 #fblike .fb_edge_comment_widget iframe {
