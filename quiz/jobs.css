@@ -59,13 +59,10 @@ body {
 
 #share {
   margin:0 auto;width:740px;
-  float: left;
 }
 
 #fblike iframe {
     width: 200px !important;
-    display: inline;
-    float: left;
 }
 
 #fblike .fb_edge_comment_widget iframe {
