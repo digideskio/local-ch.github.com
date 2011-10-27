@@ -59,6 +59,7 @@ body {
 
 #share {
   margin:0 auto;width:740px;
+  float: left;
 }
 
 #fblike iframe {
