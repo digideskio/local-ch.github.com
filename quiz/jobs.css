@@ -60,3 +60,11 @@ body {
 #share {
   margin:0 auto;width:740px;
 }
+
+#fblike iframe {
+    width: 95px !important;
+}
+
+#fblike .fb_edge_comment_widget iframe {
+    width: 330px !important;
+}
