@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Work for local.ch as a Rails developer</title>
+    <meta content='{{ page.keywords }}' name='keywords'>
+    <meta content='{{ page.description }}' name='description'>
+    <link href="http://map.local.ch/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="assets/special.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        /*  */
+        
+      
+        padding-top: 100px;
+      }
+    </style>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-26458834-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      
+      <div id="logo">
+        <img src="assets/logo_en.gif" alt="local.ch logo">
+      </div>
+      
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Work for local.ch</h1>
+        <p>We are local.ch, Switzerland's phonebook directory and on our way to be much more than that.</p>
+        <p class="tagline"><strong>We are hiring Rails developers.</strong></p>
+      </div>
+      
+      {{ content }}
+      
+      <footer>
+        <p>&copy; local.ch</p>
+      </footer>
+
+    </div> <!-- /container -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+       $("#facespreview").click(function(event){
+         $(this).hide();
+         $("#facesvideo").show();
+         $("#facesvideo iframe").attr('src', 'http://www.youtube.com/embed/L0C54n9VRRs?rel=0&autoplay=1')
+         event.preventDefault();
+       });
+       
+       $('#maplocation').hover(function() {
+         $('#map12').hide();
+         $('#map14').show();
+       }, function() {
+         $('#map14').hide();
+         $('#map12').show();
+       })
+      });
+    </script>
+  </body>
+</html>
+

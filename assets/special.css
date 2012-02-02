@@ -1,0 +1,70 @@
+body {
+  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+}
+#logo {
+  position: absolute;
+  top: -80px;
+  left: 0px;
+}
+
+.hero-unit {
+  padding: 40px;
+}
+
+.tagline {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+#intromovie {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.row.teaserimages {
+  margin-bottom: 18px;
+  height: 182px;
+}
+
+#facesvideo {
+  display: none;
+}
+
+li {
+  color: #404040;
+}
+
+.imageflow {
+  text-align: center;
+}
+
+img.inline {
+  float: right;
+  margin: 0 10px 10px 0;
+}
+
+img.inlineleft {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+img#map14 {
+  display: none;
+}
+
+.section {
+  border-top: 1px solid #eee;
+  margin-top: 25px;
+  padding-top: 15px;
+}
+
+.clear {
+ overflow: hidden;
+ height: 1%;
+}
+
+

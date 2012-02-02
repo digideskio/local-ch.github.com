@@ -1,3 +1,7 @@
+body {
+  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
 #cnt {
     width: 680px;
     margin: 20px auto;
@@ -20,10 +24,12 @@ b {
 h1 {
     font-size: 1.3em;
     margin: 20px 0 14px 0;
+    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 h2 {
     font-size: 1.1em;
     margin: 14px 0 10px 0;
+    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 h2.line {
     border-top: 1px dotted #bbb;
