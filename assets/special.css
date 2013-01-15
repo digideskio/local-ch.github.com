@@ -1,7 +1,10 @@
 body {
-  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+  font-family: "Helvetica", Tahoma, Arial, sans-serif;
 }
-
+p,li{
+  font-size: 14px;
+  line-height: 1.4;
+}
 .container {
   position: relative;
 }
