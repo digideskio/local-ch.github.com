@@ -1,14 +1,19 @@
 ---
-layout: default
+layout: responsive
 title: Jobs at local.ch
 description: Open jobs at local.ch
 keywords: local, engineer, ruby, rails, javascript, product, manager, web, website
 ---
 
-<h1>Jobs at local.ch</h1>
-<ul>
-    {% for post in site.posts %}
-        <li><a href="{{ post.url}}">{{ post.title }}</a></li>
-    {% endfor %}
-<ul>
-
+<div class="row">
+  <div class="twelve columns">
+    <h1>Jobs at local.ch</h1>
+    <ul>
+        {% for post in site.posts %}
+          {% if post.hidden != true %}
+            <li><a href="{{ post.url}}">{{ post.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+    <ul>
+  </div>
+</div>

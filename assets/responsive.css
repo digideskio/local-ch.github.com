@@ -1,0 +1,39 @@
+#logo {
+  margin:20px 0 35px;
+}
+
+#hero {
+  margin:-4px 0 35px;
+}
+
+#hero h1 {
+  border:none;
+}
+
+img.inline {
+  float:left;
+  margin:6px 10px 10px 0;
+}
+
+img#map14 {
+  display: none;
+}
+
+img.screenshot {
+  border:1px solid #404040;
+}
+
+#facesvideo {
+  display: none;
+}
+
+ul {
+  font-weight:300;
+  color:#666;
+  list-style-position:outside;
+  padding-left:20px;
+}
+
+h2 {
+  font-size:35px;
+}
