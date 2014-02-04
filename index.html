@@ -8,14 +8,15 @@ keywords: local, engineer, ruby, rails, javascript, product, manager, web, websi
 <div class="row">
   <div id="hero" class="twelve columns">
     <div class="emphasized panel">
-      <h1>Join the local.ch Engineering Team</h1>
-      <p class="small">We are local.ch, Switzerland's official phonebook directory and on our way to become much more than that.</p>
+      {% include intro.html %}
       
       <p class="tagline">Open positions:
         <ul>
-          <li><a href="/frontend-web-developer.html">Frontend Web Developer</a></li>
-          <li><a href="/java-ui-developer.html">Java Software Developer</a></li>
-          <li><a href="/senior-ir-engineer.html">Senior Information Retrieval Engineer</a></li>
+          {% for post in site.posts %}
+            {% if post.hidden != true %}
+              <li><a href="{{ post.url}}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </p>
     </div>
@@ -36,10 +37,12 @@ keywords: local, engineer, ruby, rails, javascript, product, manager, web, websi
 
     <h2 class="section">Open Positions</h2>
     <ul>
-       <li><a href="/frontend-web-developer.html">Frontend Web Developer</a></li>
-       <li><a href="/java-ui-developer.html">Java Software Developer</a></li>
-       <li><a href="/senior-ir-engineer.html">Senior Information Retrieval Engineer</a></li>
-     </ul>
+      {% for post in site.posts %}
+        {% if post.hidden != true %}
+          <li><a href="{{ post.url}}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
         
     <h5>Apply Today!</h5>
     <p>
