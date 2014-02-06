@@ -22,18 +22,27 @@ img#map14 {
 img.screenshot {
   border:1px solid #404040;
 }
+img.screenshot.inline {
+  margin: 0 15px 15px 0;
+}
 
 #facesvideo {
   display: none;
 }
 
 ul {
-  font-weight:300;
   color:#666;
   list-style-position:outside;
   padding-left:20px;
 }
 
+h1 {
+  font-size: 40px;
+}
 h2 {
   font-size:35px;
+}
+
+body, h3, h4, h5, h6 {
+  font-weight: normal;
 }
