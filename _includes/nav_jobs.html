@@ -5,15 +5,9 @@
 
           <p class="tagline"><a href="/">Find out more about the team and the company</a>.</p>
 
-          <p class="tagline">Other open positions:
-            <ul>
-              {% for post in site.posts %}
-                {% if post.hidden != true and post.url != page.url %}
-                  <li><a href="{{ post.url}}">{{ post.title }}</a></li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </p>    
+          <!-- <p class="tagline">Other open positions:
+            {% include job_list.html %}
+          </p> -->
         </div>
       </div>
     </div>

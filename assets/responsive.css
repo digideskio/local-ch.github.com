@@ -19,10 +19,7 @@ img#map14 {
   display: none;
 }
 
-img.screenshot {
-  border:1px solid #404040;
-}
-img.screenshot.inline {
+img.screenshot.left {
   margin: 0 15px 15px 0;
 }
 
@@ -34,6 +31,10 @@ ul {
   color:#666;
   list-style-position:outside;
   padding-left:20px;
+}
+.job-list {
+  list-style: none;
+  padding-left: 0;
 }
 
 h1 {

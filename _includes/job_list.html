@@ -1,0 +1,7 @@
+<ul class="job-list">
+  {% for post in site.posts %}
+    {% if post.hidden != true and post.url != page.url %}
+      <li><a href="{{ post.url}}">{{ post.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
