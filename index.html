@@ -1,23 +1,113 @@
 ---
-layout: default
+layout: responsive
+title: Join the local.ch Web Team
+description: Job positions at local.ch
+keywords: local, engineer, ruby, rails, javascript, product, manager, web, website, local, engineer, ruby, rails, javascript
 ---
 
-<div class="home">
+<div class="row">
+  <div class="col-md-8">
+    {% include intro.html %}
 
-  <h1 class="page-heading">Posts</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="position-title">Open positions:</h2>
+        {% include job_list.html %}
+      </div>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Apply Today!</h5>
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              No cover letter required. Simply send your CV and a link to your Github account (or code examples) to:</br></br> <a href="mailto:hrz@local.ch?subject=E-Media%20Job" class="btn btn-lg btn-warning">hrz@local.ch</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section">What we offer:</h2>
+        <ul>
+          <li>Small and dedicated international team with start-up character and a lot of freedom.</li>
+          <li>Deploy great applications to millions of users daily</li>
+          <li>Solve interesting problems and create new products and services</li>
+          <li>Hackdays and fun projects, time to work on your own ideas</li>
+          <li>A top-of-the-line MacBook Pro or Air, with a 27" Cinema Display</li>
+          <li>Office in Zurich, 2 minutes walk from the main train station</li>
+          <li>Free snacks, coffee, tea, full kitchen, great meeting rooms</li>
+          <li>An endless supply of whiteboard markers and drawing paper</li>
+        </ul>
+        <p><img src="/assets/images/pairing.jpg" class="img-responsive"/></p>
+      </div>
+    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    {% include about.html %}
 
+    {% include place_of_work.html %}
+
+    <h2 class="section">The Agile Engineer</h2>
+    <p>We have many different projects and teams at local.ch. From web to mobile and desktop, we combine a mix of agile practices, collaboration and code reviews to get things done. Developers work closely with product owners and designers, so engineers are truly part of the whole product development process. Teams work together and play together, in a cross-functional way, to break "bubbles" and silos.</p>
+    <h5>Best Practices</h5>
+    <p>We believe in convention over configuration, iterative development, design-first, clean APIs and peer code reviews. We &#x2665; testing. We're hackers, engaged by things like Open Data, embedded hardware and hack day projects.</p>
+    <h5>Great Teams == Great Results</h5>
+    <p>We have small teams of A-players who like to solve challenging problems. We're really into visualizations and analytics, and enjoy playing with Graphite and have several infoscreens around the office. We believe in learning and coding together, we're not afraid of new tools or new techniques. We like a simple release process and enjoy focusing on one thing at a time.</p>
+
+
+  </div>
+
+
+
+
+  
+
+  <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section">Community</h2>
+        <p>We take part in Switzerland's developer community. Our engineers regularly attend:</p>
+        <ul>
+          <li><a href="http://webtuesday.ch/">Webtuesday</a></li>
+          <li><a href="http://www.meetup.com/rubyonrails-ch">Rails Hock</a></li>
+          <li><a href="http://techup.ch/tag/JSZurich">JS Zurich</a></li>
+          <li><a href="http://events.amazeelabs.com/en/event/1st-web-monday-zurich-2012">Webmonday</a></li>
+          <li>many conferences across Europe, e.g. Frozen Rails, Oredev, JSConf.eu, Berlin Buzzwords, Railsberry, FOWA, ...</li>
+        </ul>
+        <p>Additionally we often host a <a href="http://www.meetup.com/rubyonrails-ch/">Ruby Hack Night</a> in our office.</p>
+        <p><a href="http://www.meetup.com/rubyonrails-ch/"><img src="assets/images/ruby-hacknight.jpg" alt="Ruby Hacknight at our office" class="img-responsive"/></a></p>
+
+
+        <h2 class="section">Hackdays</h2>
+        <p class="clearfix">
+          <a href="http://blog.local.ch/en/2014/10/29/hackday-2014-make-it-work/">        <img src="assets/images/hacknight.jpg" height="180" width="300" alt="Playing a game of foosball table" class="img-responsive"/> </a>
+          From time to time we organise internal Hackdays where everyone can work on his/her own projects and ideas. We enjoy the freedom and the results at the end of the day are always amazing.<br />
+        </p>
+
+        <h4>Impressions of our fun projects</h4>
+
+
+        <p>
+          <iframe width="300" height="182" src="//www.youtube.com/embed/ORI1Jdk5e5g?rel=0" frameborder="0" allowfullscreen></iframe><br />
+          <a href="http://29a.ch/2011/10/10/swiss-address-visualization-webgl">Visualization of Swiss Addresses</a>
+        </p>
+
+        <p>
+          <img src="assets/images/team.jpg" height="180" width="300" alt="Presentation of the results of a recent Hackday"/>
+        </p>
+        
+        <p>
+          <iframe src="https://player.vimeo.com/video/131065188" width="300" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br />
+          <a href="https://vimeo.com/131065188">Engineering Conference 2015</a> on <a href="https://vimeo.com">Vimeo</a>.
+        </p>
+        
+      </div>
+    </div>
+  </div>
+
+
+  
 </div>
