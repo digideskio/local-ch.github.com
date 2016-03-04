@@ -3,6 +3,14 @@ body{
   font-size: 16px;
 }
 
+ul.job-list {
+  padding: 0;
+}
+
+.job-list li{
+  list-style-type: none;
+}
+
 .logo .logo-image{
   width: 48px;
   height: 48px;
