@@ -37,12 +37,28 @@ h2.section{
   line-height: 55px;
 }
 
-.intro-title{
+h1.intro-title{
   border-bottom: 2px solid #e5e5e5;
   font-size: 26px;
+}
+
+h2.intro-title{
+  border-bottom: 2px solid #e5e5e5;
+  font-size: 26px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 .position-title{
   font-size: 38px;
   border: none;
+}
+
+.tech-logos li{
+  float: left;
+  list-style-type: none;
+}
+
+.tech-logos li img{
+  max-width: 80px;
 }
